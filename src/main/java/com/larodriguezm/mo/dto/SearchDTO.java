@@ -12,6 +12,8 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class SearchDTO {
 	
+	private Integer[] numbers;
+	
 	private Integer numeberOne;
 	
 	private Integer numeberTwo;

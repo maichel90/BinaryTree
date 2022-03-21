@@ -14,12 +14,16 @@ import lombok.experimental.FieldDefaults;
 @Builder
 public class Nodo {
 	
-	private Integer nodoId;
+	private Nodo nodoDerecha;
 	
-	private Nodo nodoMenor;
-	
-	private Nodo nodoMayor;
+	private Nodo nodoIzquierda;
 	
 	private Integer valor;
+	
+	public Nodo(Integer valor) {
+		this.valor = valor;
+	}
+	
+	
 
 }

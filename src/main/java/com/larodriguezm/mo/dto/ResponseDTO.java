@@ -1,7 +1,10 @@
 package com.larodriguezm.mo.dto;
 
+import com.larodriguezm.mo.model.Nodo;
+
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -10,9 +13,10 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@Builder
 public class ResponseDTO {
 	
-	private Integer binaryTreeID;
+	private Nodo binaryTree;
 	
 	private Integer commonAncestor;
 	

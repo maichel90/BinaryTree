@@ -1,0 +1,9 @@
+export JAVA_HOME=/usr/lib/jvm/java-11
+
+mvn clean install 
+
+docker build --tag larodriguezm/moTechnologiesChallenge .
+
+docker rm -f motechnologies_challenge
+
+docker run --name motechnologies_challenge -p 9090:9090 -d larodriguezm/moTechnologiesChallenge
